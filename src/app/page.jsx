@@ -1,20 +1,24 @@
 import React from "react";
-import Link from "next/link";
-// import styles from "../styles/styles.css";
-import Header from "../../components/header";
+import Image from "next/image";  
+// import iniciosesion from "../../../public/iniciosesion.png"
+// import styles from "../../styles/components.module.css";
+// import Header from "../components/header";
 
 
-export default function Page() {
-   
-    return(
-       <div>
-            <Header />
+export default function HomePage() {
+   return(
+    <h1>pagina inicio</h1>
 
-       </div>
-
-    );
+   );
+    
    
 };
+
+{/* <div className={styles.pageSTY}>
+            <Header />
+
+       </div> */}
+
 
 //   <h1 >
 //         Read <Link href="/posts/first-post">this page!</Link>
