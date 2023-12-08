@@ -1,3 +1,29 @@
+import styles from './footer.module.css';
+
+
+const today = new Date();
+const currYear = today.getFullYear();
+
+
+const Footer = () => {
+
+    return (
+
+        <div className={styles.footer}>
+           
+            <p> ¡Contáctenos!</p>
+            <p> Correo electrónico: escobaranalia.18@gmail.com </p>
+            <p> Celular: +569 55869513</p>
+            <p style={{paddingTop: '20px'}}> © {currYear} by Scarves Wraps</p>
+        
+        
+        </div>
+
+    );
+
+};
+
+export default Footer;
 // import React from "react";
 // import Image from "next/image";  
 // import styles from "../styles/components.module.css";

@@ -5,7 +5,7 @@ import styles from './navigation.module.css';
 
 const links = [{
     label: "Inicio",
-    route: "/"
+    route: "homepage"
   },{
     label: "Cómo arrendar",
     route: "howto" 
@@ -24,7 +24,8 @@ const links = [{
 export function Navigation() {
 
     return(
-        <header className={styles.header}>
+        <div>
+          <header className={styles.header}>
             <div className={styles.imglogin}>
             <Image src="/iniciosesion.png" width={25} height={25} alt="login"  style={styles.imageIS} /> 
               <p className={styles.login}> Iniciar sesión</p>
@@ -44,6 +45,11 @@ export function Navigation() {
               </ul>
             </nav>
           </header>
+
+
+
+
+        </div>
     );
 
 }
