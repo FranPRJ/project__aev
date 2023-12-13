@@ -1,10 +1,12 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-  }
-  
-  module.exports = {images: {
+  reactStrictMode: true,
+  swcMinify: true,
+};
+
+module.exports = {
+  images: {
     unoptimized: false,
-  },}
+  },
+};

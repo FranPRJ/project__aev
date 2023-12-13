@@ -1,0 +1,78 @@
+/* RhombusStep.module.css */
+.container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  text-align: center;
+  margin-left: 275px;
+  margin-right: 275px;
+}
+
+.stepContainer {
+  flex: 1;
+}
+
+.rhombus {
+  position: relative;
+  width: 120px; /* You can adjust the size of the rhombus */
+  height: 120px;
+  background-color: transparent;
+  /* transform: rotate(45deg); */
+  margin: 20px auto; /* Adjust margin as needed */
+}
+
+.rhombus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3498db; /* Change color as needed */
+  transform: rotate(-45deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.stepNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Change color as needed */
+  font-size: 40px; /* Adjust font size as needed */
+  /* font-weight: bold; */
+}
+
+.stepText {
+  padding-top: 20px; /* Adjust margin as needed */
+  color: #333; /* Adjust text color as needed */
+  font-size: 15px; /* Adjust font size as needed */
+  font-weight: 500;
+}
+
+.stepSubText {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rhombus1::before {
+  background-color: #c5f5ee; /* Change color as needed */
+}
+
+/* Styles for the second rhombus */
+.rhombus2::before {
+  background-color: #c5e4f5; /* Change color as needed */
+}
+
+.rhombus3::before {
+  background-color: #c5ccf5; /* Change color as needed */
+}
+
+/* Styles for the second rhombus */
+.rhombus4::before {
+  background-color: #f5d6c5; /* Change color as needed */
+}
+
+.rhombus5::before {
+  background-color: #f5eec5; /* Change color as needed */
+}
