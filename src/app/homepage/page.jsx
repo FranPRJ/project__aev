@@ -2,29 +2,33 @@
 import styles from "./homepage.module.css";
 import Image from "next/image";
 import Logo from "../../public/logo2.jpeg";
-import Carousel from "../components/carousel";
+import Carousel from "react-grid-carousel";
+// import Carousel from "../components/carousel";
 // import iniciosesion from "../../../public/iniciosesion.png"
 // import styles from "../../styles/components.module.css";
 // import Header from "../components/header";
 
-const images = require.context("../../public");
+const images = require.context("../../public/images");
 const tools = images.keys().map((image) => images(image));
 
 const Gallery = () => {
   return (
-    <Carousel cols={3} rows={1} gap={10} loop>
-      {tools.map((image, index) => {
-        //  console.log( image.default);
-        <Carousel.Item key={index}>
-          {/* <img width="auto" height="auto" 
-                  key={index}
-                  src={image.default} 
-                  alt={`index-${index}`} /> */}
-          <Image src={image.default} width={300} height={300} alt="holi" />
-          //{" "}
-        </Carousel.Item>;
-      })}
-    </Carousel>
+    <div style={{ width: "1000px", margin: "auto", paddingBottom: "200px" }}>
+      <Carousel
+        cols={3}
+        rows={1}
+        loop
+        autoplay={2000}
+        className={styles.customCarousel}
+      >
+        {tools.map((image, index) => (
+          <Carousel.Item key={index} style={styles.images}>
+            <Image src={image.default} width={300} height={300} alt="holi" />
+            <div className={styles.overlay}>hello</div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 
@@ -62,7 +66,7 @@ export default function HomePage() {
       </div>
       <div className={styles.prodDestacados}>
         <h3>Productos destacados</h3>
-        <Carousel />
+        <Gallery />
       </div>
     </div>
   );

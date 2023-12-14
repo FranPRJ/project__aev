@@ -1,71 +1,102 @@
-@media only screen and (max-width: 600px){
-    
-
+@media only screen and (max-width: 600px) {
 }
 
-.header{
-    color:#394651;
-    background-color: rgb(197, 245, 214);
-    padding: 20px 10px 0px; 
-    text-align: center;
+.header {
+  color: #394651;
+  background-color: rgb(197, 245, 214);
+  padding: 20px 10px 0px;
+  text-align: center;
 }
 
-.navigation{
-
+.navigation {
   gap: 42px;
-    list-style: none; 
-    font-size: 20px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    border-bottom: 2px solid wheat; 
-
+  list-style: none;
+  font-size: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 2px solid wheat;
 }
 
-.navigation>li{
-    padding: 0.5em 1em;
-    margin: 0 1em;
-    
+.navigation > li {
+  padding: 0.5em 1em;
+  margin: 0 1em;
 }
 
-.tabs{
-    background: #f5f5f5; 
-    font-weight: bold; 
-    border: 3px solid gray;
-    border-bottom: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    position:relative;
-    top: 2px;
+.tabs {
+  background: #f5f5f5;
+  font-weight: bold;
+  border: 3px solid gray;
+  border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
+  top: 2px;
 }
 
-.navigation a:hover{
-    text-decoration:underline;
-    border-bottom: 3px solid darkgray;
+.tabSubOptions {
+  margin: auto;
+  display: flex; /* Hide initially */
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+
+  z-index: 2; /* Increased z-index */
 }
 
-.title{
-    font-size: 60px;
-    font-style: italic;
-    font-weight: lighter;
-    
+.tabSubOption {
+  display: none;
 }
 
-.imglogin{
-    display: flex;
-    margin: 15px;
-    float: inline-end;
-    gap: 10px;
+.tabSubOptions a {
+  display: flex; /* Display by default */
+  padding: 8px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+.tabs:hover .tabSubOption {
+  display: flex;
+  font-size: 15px;
+  text-align: left;
+  padding: 5px 0px 5px 20px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee; /* Add a bottom border for separation */
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  border-bottom: 3px solid darkgray;
+}
+
+.title {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.imglogin {
+  display: flex;
+  margin: 15px;
+  float: inline-end;
+  gap: 10px;
 }
 
 /* .imageIS{
     
     /* justify-content: right; } */
 
-.login{
-    margin: auto;
-    /* float: inline-end; */
-    /* margin: 15px; */
+.login {
+  margin: auto;
+  /* float: inline-end; */
+  /* margin: 15px; */
 }
-

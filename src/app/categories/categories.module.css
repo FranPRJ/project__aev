@@ -1,12 +1,11 @@
-.categories{
-    background: #f5f5f5;
-    
+.categories {
+  background: #f5f5f5;
 }
 
 .categories > h3 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: lighter;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
 }
